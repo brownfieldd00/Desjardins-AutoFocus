@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Desjardins AutoFocus",
+  "version": "1.0",
+  "description": "AutoFocus on the security code input field",
+  "homepage_url": "https://github.com/brownfieldd00/Desjardins-AutoFocus",
+  "short_name": "Desjardins AutoFocus",
+  "author": "https://github.com/brownfieldd00",
+  "content_scripts": [
+    {
+      "js": ["scripts/main.js"],
+      "matches": [
+        "https://accweb.mouv.desjardins.com/identifiantunique/auth-mf/verification/code"
+      ]
+    }
+  ]
+}
